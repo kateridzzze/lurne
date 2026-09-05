@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Lurne — Зимние куртки нового поколения</title>
+  <meta name="description" content="Lurne — дизайнерские зимние куртки. Тепло, свобода, характер. Минималистичный силуэт, авторская графика, oversize-крой. Коллекция зима 2026." />
+  <meta name="theme-color" content="#F5F7FA" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lurne — Зима в твоём стиле" />
+  <meta property="og:description" content="Дизайнерские зимние куртки Lurne. Тепло, свобода, характер." />
+  <meta property="og:image" content="assets/хиро.jpg" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lurne — Зима в твоём стиле" />
+  <meta name="twitter:description" content="Дизайнерские зимние куртки Lurne." />
+  <meta name="twitter:image" content="assets/хиро.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F5F7FA'/%3E%3Ctext x='16' y='22' font-family='Unbounded,sans-serif' font-size='18' font-weight='800' text-anchor='middle' fill='%231B2A4A'%3EL%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Снежный канвас — глобально поверх всего -->
+  <canvas id="snow-canvas" aria-hidden="true"></canvas>
+
+  <!-- Шапка -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Lurne — главная">
+        <span class="brand__mark">L</span><span class="brand__mark">u</span><span class="brand__mark">r</span><span class="brand__mark">n</span><span class="brand__mark">e</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#collection">Коллекция</a>
+        <a href="#warmth">Характеристики</a>
+        <a href="#details">Детали</a>
+        <a href="#order">Предзаказ</a>
+      </nav>
+      <a href="#order" class="btn btn--ghost btn--sm header-cta">Связаться</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Секция 1 — Хиро -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal>зима 2026 / новая коллекция</p>
+          <h1 class="display" data-reveal>
+            <span>Зима</span>
+            <span class="display__accent">в&nbsp;твоём</span>
+            <span>стиле</span>
+          </h1>
+          <p class="hero__lead" data-reveal><strong>Тепло. Свобода. Характер.</strong></p>
+          <p class="hero__desc" data-reveal>
+            Зимние куртки LURNE созданы для тех, кто не хочет выбирать между комфортом и стилем.
+            Минималистичный силуэт, необычные градиенты и авторская графика превращают практичную зимнюю куртку в часть твоего образа.
+          </p>
+          <div class="hero__actions" data-reveal>
+            <a href="#collection" class="btn btn--primary">Смотреть коллекцию</a>
+            <a href="#warmth" class="btn btn--link">Характеристики ↓</a>
+          </div>
+        </div>
+
+        <figure class="hero__media" data-reveal>
+          <img src="assets/хиро.jpg" alt="Зимняя куртка Lurne крупным планом" loading="eager" decoding="async" />
+          <figcaption class="hero__meta">
+            <span>— модель Lurne / 01</span>
+            <span>ice&nbsp;white</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Маркер скролла -->
+      <a href="#warmth" class="scroll-hint" aria-label="Прокрутить ниже">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Секция 2 — Доверие / Характеристики -->
+    <section class="warmth" id="warmth">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">— 01 / характеристики</p>
+          <h2 class="h2">Создано для настоящей зимы</h2>
+          <p class="section-lead">
+            Мы продумали LURNE до деталей — от утеплённого капюшона и защищённой застёжки до плотного материала,
+            который помогает сохранять тепло в холодную погоду.
+          </p>
+        </header>
+
+        <ul class="features">
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="classic">
+              <!-- иконка: тепло -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 8c-2 4 4 6 0 10s4 6 0 10" />
+                <path d="M16 14c-1 3 3 4 0 7" />
+                <path d="M32 14c1 3-3 4 0 7" />
+                <path d="M14 24h20" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Тепло</h3>
+            <p class="feature__text">Сохраняет комфорт даже в морозные дни.</p>
+          </li>
+
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="wavy">
+              <!-- иконка: защита / щит -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6 8 12v12c0 9 7 14 16 18 9-4 16-9 16-18V12L24 6Z" />
+                <path d="M18 24l4 4 8-8" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Защита</h3>
+            <p class="feature__text">Плотный материал защищает от ветра, снега и зимней влаги.</p>
+          </li>
+
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="twin">
+              <!-- иконка: комфорт / oversize -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 14c-3 1-6 4-6 9v8l4 4M34 14c3 1 6 4 6 9v8l-4 4" />
+                <path d="M14 14c2-2 5-3 10-3s8 1 10 3" />
+                <path d="M18 38v-8M30 38v-8" />
+                <path d="M18 30h12" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Комфорт</h3>
+            <p class="feature__text">Свободный силуэт не ограничивает движения и позволяет легко сочетать куртку с многослойными образами.</p>
+          </li>
+
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="icicle">
+              <!-- иконка: детали / кисть -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 38l8-22" />
+                <path d="M22 16l4 22" />
+                <path d="M30 18l8 20" />
+                <path d="M14 24h20" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Детали</h3>
+            <p class="feature__text">Каждая модель дополнена собственной графикой и фирменными элементами LURNE.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Секция 3 — Польза / Коллекция -->
+    <section class="benefits" id="details">
+      <div class="container">
+        <header class="section-head section-head--wide" data-reveal>
+          <p class="eyebrow">— 02 / коллекция</p>
+          <h2 class="h2">Больше, чем просто<br/>зимняя куртка</h2>
+          <p class="section-lead"><strong>Одна куртка — десятки образов.</strong></p>
+          <p class="section-text">
+            Нейтральные и выразительные оттенки легко вписываются в повседневный гардероб,
+            а необычная графика добавляет образу индивидуальности.
+          </p>
+        </header>
+
+        <div class="benefits__grid">
+          <ul class="bullets" data-reveal>
+            <li><span>01</span> Удобный oversize-силуэт</li>
+            <li><span>02</span> Тёплый объёмный крой</li>
+            <li><span>03</span> Регулируемый капюшон</li>
+            <li><span>04</span> Вместительные карманы</li>
+            <li><span>05</span> Эластичные манжеты</li>
+            <li><span>06</span> Минималистичный брендинг</li>
+            <li><span>07</span> Уникальная графика каждой модели</li>
+          </ul>
+
+          <aside class="quote" data-reveal>
+            <p class="quote__line"><strong>Выбирай свой цвет. Создавай свой образ.</strong></p>
+            <p class="quote__text">
+              Молочный, бежевый, голубой, зелёный, розовый или чёрный —
+              LURNE создана для того, чтобы зима выглядела по-твоему.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Сетка изделий -->
+    <section class="collection" id="collection">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">— 03 / изделия</p>
+          <h2 class="h2">Коллекция зима&nbsp;2026</h2>
+        </header>
+
+        <div class="grid">
+          <a href="product.html?slug=ice-milk" class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/куртка.jpg" alt="Куртка Lurne / 01 — молочный" loading="lazy" />
+            </div>
+            <div class="card__foot">
+              <span class="card__id">Lurne / 01</span>
+              <span class="card__name">ice milk</span>
+            </div>
+          </a>
+
+          <a href="product.html?slug=frost-blue" class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/куртка1.jpg" alt="Куртка Lurne / 02 — голубой" loading="lazy" />
+            </div>
+            <div class="card__foot">
+              <span class="card__id">Lurne / 02</span>
+              <span class="card__name">frost blue</span>
+            </div>
+          </a>
+
+          <a href="product.html?slug=midnight" class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/куртка2.jpg" alt="Куртка Lurne / 03 — чёрный" loading="lazy" />
+            </div>
+            <div class="card__foot">
+              <span class="card__id">Lurne / 03</span>
+              <span class="card__name">midnight</span>
+            </div>
+          </a>
+
+          <a href="product.html?slug=sand-beige" class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/куртка3.jpg" alt="Куртка Lurne / 04 — бежевый" loading="lazy" />
+            </div>
+            <div class="card__foot">
+              <span class="card__id">Lurne / 04</span>
+              <span class="card__name">sand beige</span>
+            </div>
+          </a>
+
+          <a href="product.html?slug=powder-rose" class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/куртка4.jpg" alt="Куртка Lurne / 05 — розовый" loading="lazy" />
+            </div>
+            <div class="card__foot">
+              <span class="card__id">Lurne / 05</span>
+              <span class="card__name">powder rose</span>
+            </div>
+          </a>
+
+          <a href="product.html?slug=pine-moss" class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/куртка5.jpg" alt="Куртка Lurne / 06 — зелёный" loading="lazy" />
+            </div>
+            <div class="card__foot">
+              <span class="card__id">Lurne / 06</span>
+              <span class="card__name">pine moss</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция 4 — Доверие + CTA -->
+    <section class="closing" id="order">
+      <div class="container closing__inner">
+        <div class="closing__copy" data-reveal>
+          <p class="eyebrow">— 04 / финал</p>
+          <h2 class="display closing__title">
+            <span>Твоя зима.</span>
+            <span class="display__accent">Твои</span>
+            <span>правила.</span>
+          </h2>
+          <p class="closing__lead">Мы создали коллекцию, в которой функциональность встречается с современным дизайном.</p>
+          <p class="closing__slogan"><strong>LURNE — когда тепло выглядит стильно.</strong></p>
+          <p class="closing__desc">Выбирай модель, которая подходит именно тебе, и встречай зиму в своём стиле.</p>
+
+          <div class="closing__actions" data-reveal>
+            <button type="button" class="btn btn--primary" data-open-modal>Выбрать куртку</button>
+            <a href="#collection" class="btn btn--secondary">Посмотреть коллекцию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand brand--lg" aria-label="Lurne">
+        <span class="brand__mark">L</span><span class="brand__mark">u</span><span class="brand__mark">r</span><span class="brand__mark">n</span><span class="brand__mark">e</span>
+      </a>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <div>
+          <p class="footer-nav__head">Коллекция</p>
+          <a href="#collection">Все модели</a>
+          <a href="#warmth">Характеристики</a>
+          <a href="#details">Детали</a>
+        </div>
+        <div>
+          <p class="footer-nav__head">Связь</p>
+          <a href="#order">Предзаказ</a>
+          <a href="mailto:hello@lurne.studio">hello@lurne.studio</a>
+        </div>
+        <div>
+          <p class="footer-nav__head">Юридическое</p>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="consent.html">Согласие на обработку ПДн</a>
+        </div>
+      </nav>
+      <p class="copy">© 2026 Lurne. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Модалка предзаказа -->
+  <div class="modal" id="order-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <p class="eyebrow">— предзаказ</p>
+      <h3 class="modal__title" id="modal-title">Оставь заявку</h3>
+      <p class="modal__lead">Мы свяжемся с тобой и поможем подобрать модель и размер.</p>
+
+      <!-- Яндекс.Формы: замените https://forms.yandex.ru/admin/ВАШ_ID на реальную ссылку вашей формы -->
+      <div class="form-ya">
+        <iframe
+          src="https://forms.yandex.ru/admin/ВАШ_ID"
+          frameborder="0"
+          name="ya-form"
+          width="100%"
+          style="min-height: 480px; border: none;"
+          loading="lazy"
+          title="Форма предзаказа"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="snow.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

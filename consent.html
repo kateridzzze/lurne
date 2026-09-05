@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Согласие на обработку персональных данных — Lurne</title>
+  <meta name="description" content="Согласие на обработку персональных данных бренда Lurne в соответствии с 152-ФЗ." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F5F7FA'/%3E%3Ctext x='16' y='22' font-family='Unbounded,sans-serif' font-size='18' font-weight='800' text-anchor='middle' fill='%231B2A4A'%3EL%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="snow-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Lurne — главная">
+        <span class="brand__mark">L</span><span class="brand__mark">u</span><span class="brand__mark">r</span><span class="brand__mark">n</span><span class="brand__mark">e</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="index.html#collection">Коллекция</a>
+        <a href="index.html#warmth">Характеристики</a>
+        <a href="index.html#details">Детали</a>
+        <a href="index.html#order">Предзаказ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container legal__inner">
+      <p class="eyebrow">— юридическое</p>
+      <h1>Согласие на обработку<br/>персональных данных</h1>
+      <p>Дата публикации: 19 августа 2026 г.</p>
+
+      <p>Отправляя форму на сайте Lurne, пользователь подтверждает, что ознакомлен и согласен с настоящим Согласием на обработку персональных данных (далее — «Согласие») в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+
+      <h2>1. Перечень данных</h2>
+      <ul>
+        <li>Имя;</li>
+        <li>адрес электронной почты;</li>
+        <li>выбранная модель и размер изделия.</li>
+      </ul>
+
+      <h2>2. Цели обработки</h2>
+      <p>Обработка персональных данных осуществляется в целях:</p>
+      <ul>
+        <li>обработки заявки на предзаказ изделия;</li>
+        <li>связи с пользователем по вопросам заказа, оплаты, доставки и возврата;</li>
+        <li>информирования о статусе заявки.</li>
+      </ul>
+
+      <h2>3. Способы и сроки обработки</h2>
+      <p>Обработка осуществляется с использованием средств автоматизации и без таковых. Персональные данные хранятся в течение срока, необходимого для исполнения заявки, но не более 3 лет с момента последнего взаимодействия, если иное не предусмотрено законом.</p>
+
+      <h2>4. Передача третьим лицам</h2>
+      <p>Оператор вправе передавать персональные данные:</p>
+      <ul>
+        <li>сервису обработки форм Formspree — в целях отправки уведомлений;</li>
+        <li>службам доставки — в объёме, необходимом для отправки заказа;</li>
+        <li>иным лицам — только при наличии отдельного согласия субъекта.</li>
+      </ul>
+
+      <h2>5. Права субъекта</h2>
+      <p>Пользователь вправе:</p>
+      <ul>
+        <li>получать сведения об обработке своих данных;</li>
+        <li>требовать уточнения, блокирования или уничтожения данных;</li>
+        <li>отозвать согласие, направив заявление на <a href="mailto:hello@lurne.studio">hello@lurne.studio</a>.</li>
+      </ul>
+
+      <h2>6. Заключительные положения</h2>
+      <p>Отправка формы означает подтверждение дееспособности пользователя, достижения им возраста 18 лет, а также согласие с условиями настоящего Согласия и <a href="privacy.html">Политики конфиденциальности</a>.</p>
+
+      <p><a href="index.html">← Вернуться на главную</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand brand--lg" aria-label="Lurne">
+        <span class="brand__mark">L</span><span class="brand__mark">u</span><span class="brand__mark">r</span><span class="brand__mark">n</span><span class="brand__mark">e</span>
+      </a>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <div><p class="footer-nav__head">Коллекция</p><a href="index.html#collection">Все модели</a></div>
+        <div><p class="footer-nav__head">Связь</p><a href="mailto:hello@lurne.studio">hello@lurne.studio</a></div>
+        <div><p class="footer-nav__head">Юридическое</p><a href="privacy.html">Политика конфиденциальности</a></div>
+      </nav>
+      <p class="copy">© 2026 Lurne. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="snow.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

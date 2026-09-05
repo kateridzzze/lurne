@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lurne / 01 — ice milk — Зимняя куртка</title>
+  <meta name="description" content="Куртка Lurne / 01 ice milk. Oversize-силуэт, плотный утеплённый материал, авторская графика. Предзаказ." />
+  <meta name="theme-color" content="#F5F7FA" />
+
+  <meta property="og:type" content="product" />
+  <meta property="og:title" content="Lurne / 01 — ice milk" />
+  <meta property="og:description" content="Зимняя куртка Lurne в молочном оттенке. Oversize, тёплый крой, авторская графика." />
+  <meta property="og:image" content="assets/куртка.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F5F7FA'/%3E%3Ctext x='16' y='22' font-family='Unbounded,sans-serif' font-size='18' font-weight='800' text-anchor='middle' fill='%231B2A4A'%3EL%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Lurne / 01 — ice milk",
+    "image": ["assets/куртка.jpg","assets/куртка1.jpg","assets/куртка2.jpg"],
+    "description": "Зимняя куртка Lurne в молочном оттенке. Oversize-силуэт, плотный утеплённый материал, авторская графика.",
+    "brand": { "@type": "Brand", "name": "Lurne" },
+    "category": "Зимние куртки",
+    "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "priceCurrency": "RUB" }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="snow-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Lurne — главная">
+        <span class="brand__mark">L</span><span class="brand__mark">u</span><span class="brand__mark">r</span><span class="brand__mark">n</span><span class="brand__mark">e</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="index.html#collection">Коллекция</a>
+        <a href="index.html#warmth">Характеристики</a>
+        <a href="index.html#details">Детали</a>
+        <a href="index.html#order">Предзаказ</a>
+      </nav>
+      <a href="index.html#order" class="btn btn--ghost btn--sm header-cta">Связаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="product">
+      <div class="container product__grid">
+        <div class="product__gallery">
+          <figure class="gallery__main">
+            <img src="assets/куртка.jpg" alt="Куртка Lurne / 01 — главный ракурс" id="gallery-main" loading="eager" />
+          </figure>
+          <ul class="gallery__thumbs">
+            <li><button type="button" data-thumb="assets/куртка.jpg" class="is-active"><img src="assets/куртка.jpg" alt="Ракурс 1" loading="lazy" /></button></li>
+            <li><button type="button" data-thumb="assets/куртка1.jpg"><img src="assets/куртка1.jpg" alt="Ракурс 2" loading="lazy" /></button></li>
+            <li><button type="button" data-thumb="assets/куртка2.jpg"><img src="assets/куртка2.jpg" alt="Ракурс 3" loading="lazy" /></button></li>
+            <li><button type="button" data-thumb="assets/куртка3.jpg"><img src="assets/куртка3.jpg" alt="Ракурс 4" loading="lazy" /></button></li>
+            <li><button type="button" data-thumb="assets/куртка4.jpg"><img src="assets/куртка4.jpg" alt="Ракурс 5" loading="lazy" /></button></li>
+            <li><button type="button" data-thumb="assets/куртка5.jpg"><img src="assets/куртка5.jpg" alt="Ракурс 6" loading="lazy" /></button></li>
+          </ul>
+        </div>
+
+        <div class="product__info" data-reveal>
+          <p class="eyebrow">— Lurne / 01</p>
+          <h1 class="h2">ice&nbsp;milk</h1>
+          <p class="product__price">Предзаказ · 12 900 ₽</p>
+          <p class="product__desc">
+            Молочный оттенок, тёплый объёмный крой, авторская графика LURNE.
+            Куртка для тех, кто выбирает спокойствие вместо крика.
+          </p>
+
+          <fieldset class="field field--sizes product__sizes">
+            <legend class="field__label">Размер</legend>
+            <div class="sizes">
+              <label class="size"><input type="radio" name="size" value="XS" /><span>XS</span></label>
+              <label class="size"><input type="radio" name="size" value="S" /><span>S</span></label>
+              <label class="size"><input type="radio" name="size" value="M" checked /><span>M</span></label>
+              <label class="size"><input type="radio" name="size" value="L" /><span>L</span></label>
+              <label class="size"><input type="radio" name="size" value="XL" /><span>XL</span></label>
+            </div>
+          </fieldset>
+
+          <div class="product__actions">
+            <button type="button" class="btn btn--primary" data-open-modal>Предзаказ</button>
+            <a href="index.html#collection" class="btn btn--link">← Назад в коллекцию</a>
+          </div>
+
+          <dl class="product__spec">
+            <div><dt>Состав</dt><dd>Внешний слой — плотный мембранный текстиль · Утеплитель — 280 г/м² · Подкладка — мягкий флис</dd></div>
+            <div><dt>Размеры на модели</dt><dd>Рост 178, размер M</dd></div>
+            <div><dt>Уход</dt><dd>Деликатная стирка при 30° без отжима</dd></div>
+            <div><dt>Доставка</dt><dd>Предзаказ — отправка в течение 14 рабочих дней</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Технологии с иконками-сугробами -->
+    <section class="warmth" id="tech">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">— технологии</p>
+          <h2 class="h2">Что внутри куртки</h2>
+        </header>
+        <ul class="features">
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="classic">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 8l-4 8h8L24 8Z" /><path d="M24 16v24" /><path d="M18 30h12" /><path d="M16 36h16" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Мембрана</h3>
+            <p class="feature__text">Ветро- и водонепроницаемый внешний слой.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="wavy">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 30c4-6 8-6 12 0s8 6 12 0 8-6 12 0" /><path d="M8 38c4-6 8-6 12 0s8 6 12 0 8-6 12 0" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Утеплитель 280 г/м²</h3>
+            <p class="feature__text">Держит тепло до −20° в обычных условиях носки.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="twin">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="10" y="14" width="28" height="22" rx="2" /><path d="M10 22h28" /><path d="M18 14v-4h12v4" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Защищённая застёжка</h3>
+            <p class="feature__text">Двухзамковая молния под планкой — без продувания.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <div class="feature__icon" data-snowdrift="icicle">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="22" r="10" /><path d="M16 22h16" /><path d="M24 12v20" />
+              </svg>
+            </div>
+            <h3 class="feature__title">Капюшон</h3>
+            <p class="feature__text">Утеплённый, регулируемый по объёму.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand brand--lg" aria-label="Lurne">
+        <span class="brand__mark">L</span><span class="brand__mark">u</span><span class="brand__mark">r</span><span class="brand__mark">n</span><span class="brand__mark">e</span>
+      </a>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <div>
+          <p class="footer-nav__head">Коллекция</p>
+          <a href="index.html#collection">Все модели</a>
+          <a href="index.html#warmth">Характеристики</a>
+        </div>
+        <div>
+          <p class="footer-nav__head">Связь</p>
+          <a href="index.html#order">Предзаказ</a>
+          <a href="mailto:hello@lurne.studio">hello@lurne.studio</a>
+        </div>
+        <div>
+          <p class="footer-nav__head">Юридическое</p>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="consent.html">Согласие на обработку ПДн</a>
+        </div>
+      </nav>
+      <p class="copy">© 2026 Lurne. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Модалка предзаказа -->
+  <div class="modal" id="order-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <p class="eyebrow">— предзаказ</p>
+      <h3 class="modal__title" id="modal-title">Оставь заявку</h3>
+      <p class="modal__lead">Мы свяжемся с тобой и поможем подобрать размер.</p>
+
+      <!-- Яндекс.Формы: замените https://forms.yandex.ru/admin/ВАШ_ID на реальную ссылку вашей формы -->
+      <div class="form-ya">
+        <iframe
+          src="https://forms.yandex.ru/admin/ВАШ_ID"
+          frameborder="0"
+          name="ya-form"
+          width="100%"
+          style="min-height: 480px; border: none;"
+          loading="lazy"
+          title="Форма предзаказа"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="snow.js" defer></script>
+  <script src="main.js" defer></script>
+  <script>
+    // Каталог изделий — данные для динамической маршрутизации
+    (() => {
+      'use strict';
+
+      const PRODUCTS = {
+        'ice-milk': {
+          id: '01',
+          name: 'ice milk',
+          price: '12 900 ₽',
+          desc: 'Молочный оттенок, тёплый объёмный крой, авторская графика LURNE. Куртка для тех, кто выбирает спокойствие вместо крика.',
+          images: ['assets/куртка.jpg', 'assets/куртка1.jpg', 'assets/куртка2.jpg', 'assets/куртка3.jpg', 'assets/куртка4.jpg', 'assets/куртка5.jpg'],
+          composition: 'Внешний слой — плотный мембранный текстиль · Утеплитель — 280 г/м² · Подкладка — мягкий флис',
+          modelSize: 'Рост 178, размер M'
+        },
+        'frost-blue': {
+          id: '02',
+          name: 'frost blue',
+          price: '12 900 ₽',
+          desc: 'Голубой как зимнее утро. Куртка LURNE в оттенке frost blue — свежий взгляд на зимний гардероб.',
+          images: ['assets/куртка1.jpg', 'assets/куртка.jpg', 'assets/куртка2.jpg', 'assets/куртка3.jpg', 'assets/куртка4.jpg', 'assets/куртка5.jpg'],
+          composition: 'Внешний слой — плотный мембранный текстиль · Утеплитель — 280 г/м² · Подкладка — мягкий флис',
+          modelSize: 'Рост 178, размер M'
+        },
+        'midnight': {
+          id: '03',
+          name: 'midnight',
+          price: '12 900 ₽',
+          desc: 'Чёрный как самая тёмная ночь. Куртка midnight — выбор для тех, кто не сливается с толпой.',
+          images: ['assets/куртка2.jpg', 'assets/куртка.jpg', 'assets/куртка1.jpg', 'assets/куртка3.jpg', 'assets/куртка4.jpg', 'assets/куртка5.jpg'],
+          composition: 'Внешний слой — плотный мембранный текстиль · Утеплитель — 280 г/м² · Подкладка — мягкий флис',
+          modelSize: 'Рост 178, размер M'
+        },
+        'sand-beige': {
+          id: '04',
+          name: 'sand beige',
+          price: '12 900 ₽',
+          desc: 'Бежевый как песчаные дюны. Естественный оттенок, который вписывается в любой гардероб.',
+          images: ['assets/куртка3.jpg', 'assets/куртка.jpg', 'assets/куртка1.jpg', 'assets/куртка2.jpg', 'assets/куртка4.jpg', 'assets/куртка5.jpg'],
+          composition: 'Внешний слой — плотный мембранный текстиль · Утеплитель — 280 г/м² · Подкладка — мягкий флис',
+          modelSize: 'Рост 178, размер M'
+        },
+        'powder-rose': {
+          id: '05',
+          name: 'powder rose',
+          price: '12 900 ₽',
+          desc: 'Розовый как лепестки цветов. Мягкий оттенок, который добавляет образу нежности и индивидуальности.',
+          images: ['assets/куртка4.jpg', 'assets/куртка.jpg', 'assets/куртка1.jpg', 'assets/куртка2.jpg', 'assets/куртка3.jpg', 'assets/куртка5.jpg'],
+          composition: 'Внешний слой — плотный мембранный текстиль · Утеплитель — 280 г/м² · Подкладка — мягкий флис',
+          modelSize: 'Рост 178, размер M'
+        },
+        'pine-moss': {
+          id: '06',
+          name: 'pine moss',
+          price: '12 900 ₽',
+          desc: 'Зелёный как хвойный лес. Оттенок, который напоминает о природе даже в городской среде.',
+          images: ['assets/куртка5.jpg', 'assets/куртка.jpg', 'assets/куртка1.jpg', 'assets/куртка2.jpg', 'assets/куртка3.jpg', 'assets/куртка4.jpg'],
+          composition: 'Внешний слой — плотный мембранный текстиль · Утеплитель — 280 г/м² · Подкладка — мягкий флис',
+          modelSize: 'Рост 178, размер M'
+        }
+      };
+
+      // Чтение slug из URL
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug');
+      const product = PRODUCTS[slug];
+
+      if (product) {
+        // Динамическое обновление заголовка и метаданных
+        document.title = `Lurne / ${product.id} — ${product.name} — Зимняя куртка`;
+        document.querySelector('meta[name="description"]').setAttribute('content', `Куртка Lurne / ${product.id} ${product.name}. Oversize-силуэт, плотный утеплённый материал, авторская графика. Предзаказ.`);
+        document.querySelector('meta[property="og:title"]').setAttribute('content', `Lurne / ${product.id} — ${product.name}`);
+        document.querySelector('meta[property="og:description"]').setAttribute('content', `Зимняя куртка Lurne в оттенке ${product.name}. Oversize, тёплый крой, авторская графика.`);
+        document.querySelector('meta[property="og:image"]').setAttribute('content', product.images[0]);
+
+        // Обновление разметки
+        document.querySelector('.eyebrow').textContent = `— Lurne / ${product.id}`;
+        document.querySelector('.product__info h1').textContent = product.name;
+        document.querySelector('.product__price').textContent = `Предзаказ · ${product.price}`;
+        document.querySelector('.product__desc').textContent = product.desc;
+        document.querySelector('.product__spec div:nth-child(1) dd').textContent = product.composition;
+        document.querySelector('.product__spec div:nth-child(2) dd').textContent = product.modelSize;
+
+        // Галерея — главное изображение
+        const mainImg = document.getElementById('gallery-main');
+        if (mainImg) mainImg.src = product.images[0];
+
+        // Галерея — превью
+        const thumbsContainer = document.querySelector('.gallery__thumbs');
+        if (thumbsContainer) {
+          thumbsContainer.innerHTML = product.images.map((img, i) => `
+            <li><button type="button" data-thumb="${img}" class="${i === 0 ? 'is-active' : ''}"><img src="${img}" alt="Ракурс ${i + 1}" loading="lazy" /></button></li>
+          `).join('');
+        }
+
+        // JSON-LD
+        const ldScript = document.querySelector('script[type="application/ld+json"]');
+        if (ldScript) {
+          const ld = {
+            '@context': 'https://schema.org/',
+            '@type': 'Product',
+            name: `Lurne / ${product.id} — ${product.name}`,
+            image: product.images,
+            description: product.desc,
+            brand: { '@type': 'Brand', name: 'Lurne' },
+            category: 'Зимние куртки',
+            offers: { '@type': 'Offer', availability: 'https://schema.org/PreOrder', priceCurrency: 'RUB' }
+          };
+          ldScript.textContent = JSON.stringify(ld);
+        }
+      }
+
+      // Галерея: переключение превью
+      const main = document.getElementById('gallery-main');
+      document.querySelectorAll('[data-thumb]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('[data-thumb]').forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          if (main) main.src = btn.dataset.thumb;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
